@@ -1,0 +1,15 @@
+[
+  {
+    "day": [1, 2, 3, 4, 5], // Ngày trong tuần (1: Thứ 2, 2: Thứ 3,...)
+    "start": "07:30:00", // Giờ bắt đầu tiết học
+    "end": "09:10:00", // Giờ kết thúc tiết học
+    "text": "Môn học" // Tên môn học
+  },
+  {
+    "day": [1, 2, 3, 4, 5],
+    "start": "09:20:00",
+    "end": "11:00:00",
+    "text": "Môn học khác"
+  },
+  // Thêm các tiết học khác tương tự ở đây
+]

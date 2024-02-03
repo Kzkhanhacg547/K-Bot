@@ -1,0 +1,350 @@
+[
+  {
+    "start": "00:00:00",
+    "end": "06:45:00",
+    "day": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "text": "Nghỉ"
+  },
+  {
+    "start": "06:45:00",
+    "end": "07:00:00",
+    "day": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "text": "15p đầu giờ"
+  },
+  {
+    "start": "07:45:00",
+    "end": "07:50:00",
+    "day": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "text": "Chuyển Tiết"
+  },
+  {
+    "start": "08:35:00",
+    "end": "08:55:00",
+    "day": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "text": "Ra Chơi"
+  },
+  {
+    "start": "09:40:00",
+    "end": "09:45:00",
+    "day": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "text": "Chuyển Tiết"
+  },
+  {
+    "start": "10:30:00",
+    "end": "13:25:00",
+    "day": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "text": "Nghỉ"
+  },
+  {
+    "start": "13:25:00",
+    "end": "13:30:00",
+    "day": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "text": "Truy Bài"
+  },
+  {
+    "start": "16:50:00",
+    "end": "23:59:00",
+    "day": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "text": "Nghỉ"
+  },
+  {
+    "start": "11:25:00",
+    "end": "23:59:59",
+    "day": "Saturday",
+    "text": "Nghỉ"
+  },
+  {
+    "start": "10:30:00",
+    "end": "10:40:00",
+    "day": "Saturday",
+    "text": "Ra Chơi"
+  },
+  {
+    "start": "15:00:00",
+    "end": "15:20:00",
+    "day": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+    "text": "Ra Chơi"
+  },
+  {
+    "start": "07:00:00",
+    "end": "07:45:00",
+    "day": "Monday",
+    "text": "Chào Cờ"
+  },
+  {
+    "start": "07:50:00",
+    "end": "08:35:00",
+    "day": "Monday",
+    "text": "Nghỉ"
+  },
+  {
+    "start": "08:55:00",
+    "end": "09:40:00",
+    "day": "Monday",
+    "text": "Nghỉ"
+  },
+  {
+    "start": "09:45:00",
+    "end": "10:30:00",
+    "day": "Monday",
+    "text": "Nghỉ"
+  },
+  {
+    "start": "13:30:00",
+    "end": "14:15:00",
+    "day": "Monday",
+    "text": "Nghỉ"
+  },
+  {
+    "start": "14:15:00",
+    "end": "15:00:00",
+    "day": "Monday",
+    "text": "Nghỉ"
+  },
+  {
+    "start": "15:20:00",
+    "end": "16:05:00",
+    "day": "Monday",
+    "text": "Nghỉ"
+  },
+  {
+    "start": "16:05:00",
+    "end": "16:50:00",
+    "day": "Monday",
+    "text": "Nghỉ"
+  },
+  {
+    "start": "07:00:00",
+    "end": "07:45:00",
+    "day": "Tuesday",
+    "text": "Sinh Học"
+  },
+  {
+    "start": "07:50:00",
+    "end": "08:35:00",
+    "day": "Tuesday",
+    "text": "Sinh Học"
+  },
+  {
+    "start": "08:55:00",
+    "end": "09:40:00",
+    "day": "Tuesday",
+    "text": "Vật Lí"
+  },
+  {
+    "start": "09:45:00",
+    "end": "10:30:00",
+    "day": "Tuesday",
+    "text": "Tiếng Anh"
+  },
+  {
+    "start": "10:35:00",
+    "end": "10:30:00",
+    "day": "Tuesday",
+    "text": "Ngữ Văn"
+  },
+  {
+    "start": "13:30:00",
+    "end": "14:15:00",
+    "day": "Tuesday",
+    "text": "Nghỉ"
+  },
+  {
+    "start": "14:15:00",
+    "end": "15:00:00",
+    "day": "Tuesday",
+    "text": "Nghỉ"
+  },
+  {
+    "start": "15:20:00",
+    "end": "16:05:00",
+    "day": "Tuesday",
+    "text": "Nghỉ"
+  },
+  {
+    "start": "16:05:00",
+    "end": "16:50:00",
+    "day": "Tuesday",
+    "text": "Nghỉ"
+  },
+  {
+    "start": "07:00:00",
+    "end": "07:45:00",
+    "day": "Wednesday",
+    "text": "Hóa Học"
+  },
+  {
+    "start": "07:50:00",
+    "end": "08:35:00",
+    "day": "Wednesday",
+    "text": "Hóa Học"
+  },
+  {
+    "start": "08:55:00",
+    "end": "09:40:00",
+    "day": "Wednesday",
+    "text": "Ngữ Văn"
+  },
+  {
+    "start": "09:45:00",
+    "end": "10:30:00",
+    "day": "Wednesday",
+    "text": "Ngữ Văn"
+  },
+  {
+    "start": "13:30:00",
+    "end": "14:15:00",
+    "day": "Wednesday",
+    "text": "Nghỉ"
+  },
+  {
+    "start": "14:15:00",
+    "end": "15:00:00",
+    "day": "Wednesday",
+    "text": "Nghỉ"
+  },
+  {
+    "start": "15:20:00",
+    "end": "16:05:00",
+    "day": "Wednesday",
+    "text": "Nghỉ"
+  },
+  {
+    "start": "16:05:00",
+    "end": "16:50:00",
+    "day": "Wednesday",
+    "text": "Nghỉ"
+  },
+  {
+    "start": "07:00:00",
+    "end": "07:45:00",
+    "day": "Thursday",
+    "text": "Anh Văn"
+  },
+  {
+    "start": "07:50:00",
+    "end": "08:35:00",
+    "day": "Thursday",
+    "text": "Anh Văn"
+  },
+  {
+    "start": "08:55:00",
+    "end": "09:40:00",
+    "day": "Thursday",
+    "text": "Hướng Nghiệp"
+  },
+  {
+    "start": "09:45:00",
+    "end": "10:30:00",
+    "day": "Thursday",
+    "text": "Hướng Nghiệp"
+  },
+  {
+    "start": "13:30:00",
+    "end": "14:15:00",
+    "day": "Thursday",
+    "text": "Nghỉ"
+  },
+  {
+    "start": "14:15:00",
+    "end": "15:00:00",
+    "day": "Thursday",
+    "text": "Nghỉ"
+  },
+  {
+    "start": "15:20:00",
+    "end": "16:05:00",
+    "day": "Thursday",
+    "text": "Nghỉ"
+  },
+  {
+    "start": "16:05:00",
+    "end": "16:50:00",
+    "day": "Thursday",
+    "text": "Nghỉ"
+  },
+  {
+    "start": "07:00:00",
+    "end": "07:45:00",
+    "day": "Friday",
+    "text": "Lịch Sử"
+  },
+  {
+    "start": "07:50:00",
+    "end": "08:35:00",
+    "day": "Friday",
+    "text": "Lịch Sử"
+  },
+  {
+    "start": "08:55:00",
+    "end": "09:40:00",
+    "day": "Friday",
+    "text": "Toán"
+  },
+  {
+    "start": "09:45:00",
+    "end": "10:30:00",
+    "day": "Friday",
+    "text": "Toán"
+  },
+  {
+    "start": "13:30:00",
+    "end": "14:15:00",
+    "day": "Friday",
+    "text": "Nghỉ"
+  },
+  {
+    "start": "14:15:00",
+    "end": "15:00:00",
+    "day": "Friday",
+    "text": "Nghỉ"
+  },
+  {
+    "start": "15:20:00",
+    "end": "16:05:00",
+    "day": "Friday",
+    "text": "Nghỉ"
+  },
+  {
+    "start": "16:05:00",
+    "end": "16:50:00",
+    "day": "Friday",
+    "text": "Nghỉ"
+  },
+  {
+    "start": "07:00:00",
+    "end": "07:45:00",
+    "day": "Saturday",
+    "text": "Toán"
+  },
+  {
+    "start": "07:50:00",
+    "end": "08:35:00",
+    "day": "Saturday",
+    "text": "Hóa Học"
+  },
+  {
+    "start": "08:55:00",
+    "end": "09:40:00",
+    "day": "Saturday",
+    "text": "Tin Học"
+  },
+  {
+    "start": "09:45:00",
+    "end": "10:30:00",
+    "day": "Saturday",
+    "text": "Sinh Hoạt"
+  },
+  {
+    "start": "10:40:00",
+    "end": "11:25:00",
+    "day": "Saturday",
+    "text": "Đi về"
+  },
+  {
+    "start": "00:00:00",
+    "end": "23:59:59",
+    "day": "Sunday",
+    "text": "Nghỉ"
+  }
+]

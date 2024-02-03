@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kz BOT Page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <style>
+        body {
+            background: #f0f0f0;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .container {
+            text-align: center;
+            padding: 20px;
+            border-radius: 10px;
+            background: #fff;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            animation: fadeIn 1s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        h1, h2, h3, h4 {
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .avatar {
+            border-radius: 50%;
+            max-width: 150px;
+            margin: 0 auto;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        a {
+            text-decoration: none;
+            color: #333;
+            transition: color 0.3s ease-in-out;
+        }
+
+        a:hover {
+            color: #fbcf61;
+        }
+
+        #day, #time {
+            margin-top: 10px;
+            color: #555;
+        }
+
+        .heart {
+            cursor: pointer;
+            transition: transform 0.3s ease-in-out;
+            width: 20px;
+            height: 20px;
+            background: #ff6f6f;
+            transform: rotate(45deg);
+            margin-top: 20px;
+        }
+
+        .heart:hover {
+            transform: scale(1.2);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Kz BOT</h1>
+        <img class="avatar" src="https://graph.facebook.com/100081129610697/picture?height=1280&width=1280&access_token=6628568379%7Cc1e620fa708a1d5696fb991c1bde5662" alt="Avatar">
+        <h2>My Admin: Kz Khánhh</h2>
+        <h3 id="day">Day</h3>
+        <h3 id="time">Time</h3>
+        <a href="https://m.me/100084449929632"><h4>Contact Me <i class="fas fa-envelope"></i></h4></a>
+        <div class="heart"></div>
+    </div>
+    <script>
+        var today = new Date();
+        var date = "Today is: " + today.getDate() + '-' + (today.getMonth() + 1) + '-' + today.getFullYear();
+        var time = today.getHours() + ":" + today.getMinutes() + ":" + today.getSeconds();
+        document.getElementById("day").innerHTML = date;
+
+        document.addEventListener('DOMContentLoaded', function () {
+            function updateClock() {
+                var now = new Date(),
+                    hours = (Math.floor(Math.floor((now - today) / 1000) / 60 / 60)) % 24,
+                    minutes = (Math.floor(Math.floor((now - today) / 1000) / 60)) % 60,
+                    seconds = Math.floor((now - today) / 1000) % 60;
+                var currentTime = "Current time: " + `${(hours > 9) ? hours : "0" + hours}:${(minutes > 9) ? minutes : "0" + minutes}:${(seconds > 9) ? seconds : "0" + seconds}`;
+                document.getElementById("time").innerHTML = currentTime;
+            }
+            updateClock();
+            var timer = setInterval(function () { updateClock() }, 1000);
+        }, false);
+    </script>
+</body>
+</html>

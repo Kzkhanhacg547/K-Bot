@@ -1,0 +1,22 @@
+{
+    "user": [
+        {
+            "userID": "100081129610697",
+            "messenger": {
+                "day": 0,
+                "week": 37,
+                "all": 48
+            },
+            "timestamp": 1703968550677
+        },
+        {
+            "userID": "100077683860695",
+            "messenger": {
+                "day": 0,
+                "week": 0,
+                "all": 0
+            },
+            "timestamp": 1703968550677
+        }
+    ]
+}

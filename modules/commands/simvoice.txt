@@ -1,0 +1,69 @@
+module.exports.config = {
+    name: "simvoice",
+    version: "4.3.6",
+    hasPermssion: 0,
+    credits: "ProCoderMew",
+    description: "Chat cùng con sim mất dậy nhất",
+    commandCategory: "Chat cùng sim",
+    usages: "[args]",
+    cooldowns: 5,
+    dependencies: {
+        axios: ""
+    }
+}
+
+async function simVoice(text) {
+    const axios = require('axios');
+    const { data } = await axios.get(`https://randomapi--kzbott.repl.co/sim?type=ask&ask=${encodeURIComponent(text)}`, {
+        headers: { 'Content-Type': 'application/json', 'Authorization': ``  }
+    });
+    return data.answer;
+}
+
+module.exports.handleEvent = async function ({ api, event }) {
+    const { createReadStream, unlinkSync } = require('fs-extra');
+    const { resolve } = require('path');
+    const { threadID, messageID, senderID, body } = event;
+    if (senderID === api.getCurrentUserID() || !body) return;
+    try {
+        const text = await simVoice(body);
+        const path = resolve(__dirname, 'cache', `${event.threadID}_${event.senderID}.mp3`);
+        await global.utils.downloadFile(`https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(text)}&tl=vi&client=tw-ob`, path);
+        api.sendMessage({ attachment: createReadStream(path) }, event.threadID, () => unlinkSync(path));
+    } catch (e) {
+        console.log(e);
+    }
+}
+
+module.exports.run = async function ({ api, event, args }) {
+    const { createReadStream, unlinkSync } = require('fs-extra');
+    const { resolve } = require('path');
+    const { threadID, messageID } = event;
+    if (!args[0]) return api.sendMessage("Bạn chưa nhập tin nhắn", threadID, messageID);
+    switch (args[0]) {
+        case "on":
+            global.procodermew = global.procodermew || {};
+            global.procodermew.simsimi = global.procodermew.simsimi || new Map();
+            global.procodermew.simsimi.set(threadID, messageID);
+            api.sendMessage("Đã bật sim thành công.", threadID, messageID);
+            break;
+        case "off":
+            if (global.procodermew && global.procodermew.simsimi && global.procodermew.simsimi.has(threadID)) {
+                global.procodermew.simsimi.delete(threadID);
+                api.sendMessage("Đã tắt sim thành công.", threadID, messageID);
+            } else {
+                api.sendMessage("Bạn chưa bật sim.", threadID, messageID);
+            }
+            break;
+        default:
+            try {
+                const text = await simVoice(args.join(" "));
+                const path = resolve(__dirname, 'cache', `${event.threadID}_${event.senderID}.mp3`);
+                await global.utils.downloadFile(`https://translate.google.com/translate_tts?ie=UTF-8&q=${encodeURIComponent(text)}&tl=vi&client=tw-ob`, path);
+                api.sendMessage({ attachment: createReadStream(path) }, event.threadID, () => unlinkSync(path));
+            } catch (e) {
+                console.log(e);
+            }
+            break;
+    }
+}

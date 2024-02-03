@@ -1,0 +1,37 @@
+{
+  "name": "Kz Khánhh",
+  "ID": "100081129610697",
+  "mainROD": "Cúp vàng",
+  "GPS": {
+    "locate": "Nether And The End",
+    "area": "Rừng máu"
+  },
+  "fishBag": [
+    {
+      "ID": 0,
+      "name": "Bedrock",
+      "category": "Legendary",
+      "size": 999999,
+      "sell": 0
+    },
+    {
+      "ID": 1,
+      "name": "Nether Quartz Ore",
+      "category": "Uncommon",
+      "size": 120,
+      "sell": 990,
+      "image": "https://i.imgur.com/2lk1JeN.png"
+    }
+  ],
+  "item": [
+    {
+      "name": "Cúp vàng",
+      "price": 8000,
+      "durability": 190,
+      "countdown": 7,
+      "countdownData": 1695745549460,
+      "image": "https://i.imgur.com/yPedwZX.png"
+    }
+  ],
+  "timeRegister": "23:21:52, 26/9/2023"
+}
